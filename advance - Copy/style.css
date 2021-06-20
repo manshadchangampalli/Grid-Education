@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  background-color: rgb(128, 128, 128);
+  padding: 1rem 6rem;
+}
+.container {
+  width: 90%;
+  height: 90vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1.2fr;
+  grid-template-rows: 1fr 4fr 1.2fr 1.2fr 1fr;
+  grid-template-areas: "logo     logo    header"
+                        "main    main    image"
+                        "quotes  quotes  image"
+                        "btn1    btn2    image"
+                        "footer  footer  footer";
+  margin: auto;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.logo {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(212, 246, 255);
+  display: flex;
+  align-items: center;
+  grid-area: logo;
+}
+.logo h3 {
+  color: rgb(0, 107, 5);
+  margin-left: 6rem;
+  letter-spacing: 1px;
+  font-size: 1.5rem;
+}
+.nav-items {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  grid-area: header;
+}
+.nav-items ul {
+  display: flex;
+  justify-content: space-evenly;
+  margin-right: 0.5rem;
+}
+.nav-items ul li {
+  font-weight: 700;
+  list-style: none;
+  margin: 0px 1rem;
+}
+.heading-text {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  grid-area: main;  
+}
+.heading {
+  width: 70%;
+  height: 100%;
+  margin: 2rem auto auto;
+}
+.heading h2 {
+  width: 45%;
+  margin-bottom: 1rem;
+}
+.heading p {
+  color: rgba(0, 0, 0, 0.753);
+}
+.img {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  grid-area: image;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+.sub-text {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(181, 240, 255);
+  display: flex;
+  align-items: center;
+  padding-left: 6rem;
+  grid-area: quotes;
+}
+.read-more {
+  width: 100%;
+  height: 100%;
+  color: white;
+  display: flex;
+  align-items: center;
+  grid-area: btn1;
+  justify-content: center;
+  background-color: rgb(0, 107, 5);
+}
+.view-all {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(31, 226, 41);
+  color: white;
+  display: flex;
+  align-items: center;
+  grid-area: btn2;
+  justify-content: center;
+}
+.footer {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  grid-area: footer;
+}
